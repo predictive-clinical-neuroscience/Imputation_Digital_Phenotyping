@@ -1,2 +1,4 @@
 # Imputation_Digital_Phenotyping
 Poisson process imputation methods for digital phenotyping
+
+The script provided here includes functions for training individual Poisson point process models (PPPMs) using NHPoisson, including likelihood ratio tests to compare non-homogeneous PPPMs including covariates to baseline homogeneous PPPMs, and calculation of out-of-sample Poisson log-likelihood to evaluate the suitability of this method for imputation of missing smartphone activity data. 'Hour of the day' and 'day of the week' are considered as covariates, with one-hot encoding and sine-cosine transformation explored as covariate encoding methods. The trained PPPMs are then used to simulate time series. We provide example cells for models trained on the 'Phone Usage' channel from the Behapp smartphone app.
